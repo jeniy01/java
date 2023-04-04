@@ -24,6 +24,45 @@ public class ArrayListEx3 {
 				st.setEng(Integer.parseInt(sc.nextLine()));
 				System.out.println("수학 : ");
 				st.setMat(Integer.parseInt(sc.nextLine()));
+				stArr.add(st);
+			} else if(job==2){
+				for(Student s : stArr){
+					System.out.println(s.toString());
+				}
+			} else if(job==3){
+				System.out.println("삭제할 번호(인덱스) 입력 : ");
+				int a = Integer.parseInt(sc.nextLine());
+				if(a >= stArr.size()){
+					System.out.println("해당 번호의 데이터가 존재하지 않습니다.");
+				} else {
+					stArr.remove(a);
+				}
+			} else if(job==4){
+				System.out.print("값을 변경할 번호(인덱스) 입력 : ");
+				int a = Integer.parseInt(sc.nextLine());
+				if(a >= stArr.size()){
+					System.out.println("해당 번호의 데이터가 존재하지 않습니다.");
+				} else {
+					stArr.remove(a);
+					Student st = new Student();
+					st.setNo(cnt);
+					System.out.print("이름 : ");
+					st.setName(sc.nextLine());
+					System.out.print("국어 : ");
+					st.setKor(Integer.parseInt(sc.nextLine()));
+					System.out.print("영어 : ");
+					st.setEng(Integer.parseInt(sc.nextLine()));
+					System.out.print("수학 : ");
+					st.setMat(Integer.parseInt(sc.nextLine()));
+					stArr.add(a, st);
+				}
+			} else if(job==5) {
+				System.out.println("학생데이터를 모두 비웁니다.");
+				cnt = 0;
+				stArr.clear();	//ArrayList 비우기
+			} else {
+				System.out.println("프로그램 종료");
+				break;
 			}
 		}
 	}
