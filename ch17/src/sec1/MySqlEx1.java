@@ -33,5 +33,4 @@ public class MySqlEx1 {
 			System.out.println(t.toString());
 		}
 	}
-
 }
