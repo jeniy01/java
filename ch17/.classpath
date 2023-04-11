@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="D:/parkjihyeon/lib/ojdbc6.jar"/>
 	<classpathentry kind="lib" path="D:/parkjihyeon/lib/mysql-connector-java-8.0.28.jar"/>
 	<classpathentry kind="lib" path="D:/parkjihyeon/lib/mariadb-java-client-3.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/parkjihyeon/lib/postgresql-42.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

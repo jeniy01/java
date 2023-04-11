@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class MySqlEx2 {
+public class MySQLEx2 {
 	static Connection conn = null;
 	static PreparedStatement pstmt = null;
 	public static void main(String[] args) {

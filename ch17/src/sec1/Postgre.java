@@ -6,10 +6,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class MariaDB {
-	private final static String DRIVER = "org.mariadb.jdbc.Driver";
-	private final static String URL = "jdbc:mariadb://127.0.0.1:3308/company";
-	private final static String USER = "root";
+public class Postgre {
+	private final static String DRIVER = "org.postgresql.Driver";
+	private final static String URL = "jdbc:postgresql://localhost/sample";
+	private final static String USER = "postgres";
 	private final static String PASS = "1234";
 	
 	static Connection getConnection(){
